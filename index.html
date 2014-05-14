@@ -302,7 +302,7 @@
 			});
 
 			// DATEPICKER
-			$('#datepicker1').datepicker();
+			$('#datepicker1').datepicker({date : new Date(), restrictDateSelection : false, momentConfig: { culture: 'en', formatCode: 'L' } });
 
 			$('#datepicker1').on('changed', function( event, data ) {
 				console.log( 'datepicker change event fired' );
